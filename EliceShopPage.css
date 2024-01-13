@@ -75,4 +75,99 @@ ol, ul {
     font-weight: bold;
 }
 
+/* main */
 
+#main article {
+    width: 50%;
+    height: 320px;
+    float: left;
+}
+
+#main article a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#main article.imageBox1 {
+    background-color: #532fa1;
+}
+#main article.imageBox2 {
+    background-color: #a44789;
+}
+#main article.imageBox3 {
+    background-color: #3ab6bc;
+}
+#main article.imageBox4 {
+    background-color: #daec17;
+}
+#main article.imageBox5 {
+    background-color: #f600ef;
+}
+#main article.imageBox6 {
+    background-color: #3be000;
+}
+#main article.imageBox7 {
+    background-color: #ff022a;
+}
+#main article.imageBox8 {
+    background-color: #ff8000;
+}
+
+#main article img {
+    width: 100%;
+}
+
+#main article h2 {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 0px 0 0px 0;
+}
+
+#main article.text {
+    width: 100%;
+    height: 66px;
+}
+
+#main article.text p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0;
+    border: solid 0px #000;
+}
+
+/* footer */
+
+#footer {
+    clear :both;
+    width: 100%;
+    height: 80px;
+    background-color: #f9f9f9;
+
+}
+
+#footer .copyright {
+    float : left;
+    width: 50%;
+}
+
+#footer .address {
+    float : right;
+    width: 50%;
+}
+
+#footer .copyright p {
+    font-size: 12px;
+    color : #999;
+    padding: 32px 0 0 40px;
+}
+
+#footer .address p {
+    font-size: 12px;
+    color : #999;
+    padding: 32px 40px 0 0;
+
+    text-align: right;
+}
