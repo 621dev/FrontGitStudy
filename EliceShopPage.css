@@ -73,6 +73,11 @@ ol, ul {
 #intro nav ul li a {
     font-size: 20px;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+#intro nav ul li a:hover {
+    color: #917f7f;
 }
 
 /* main */
@@ -91,27 +96,66 @@ ol, ul {
 
 #main article.imageBox1 {
     background-color: #532fa1;
+    transition: background-color 0.3s;
 }
+#main article.imageBox1:hover {
+    background-color: #8683bd;
+}
+
 #main article.imageBox2 {
     background-color: #a44789;
+    transition: background-color 0.3s;
 }
+#main article.imageBox2:hover {
+    background-color: #bf7eac;
+}
+
 #main article.imageBox3 {
     background-color: #3ab6bc;
+    transition: background-color 0.3s;
 }
+#main article.imageBox3:hover {
+    background-color: #75ccd0;
+}
+
 #main article.imageBox4 {
     background-color: #daec17;
+    transition: background-color 0.3s;
 }
+#main article.imageBox4:hover {
+    background-color: #e6ff02;
+}
+
 #main article.imageBox5 {
     background-color: #f600ef;
+    transition: background-color 0.3s;
 }
+#main article.imageBox5:hover {
+    background-color: #ff9cf7;
+}
+
 #main article.imageBox6 {
     background-color: #3be000;
+    transition: background-color 0.3s;
 }
+#main article.imageBox6:hover {
+    background-color: #99ff79;
+}
+
 #main article.imageBox7 {
     background-color: #ff022a;
+    transition: background-color 0.3s;
 }
+#main article.imageBox7:hover {
+    background-color: #ff6682;
+}
+
 #main article.imageBox8 {
     background-color: #ff8000;
+    transition: background-color 0.3s;
+}
+#main article.imageBox8:hover {
+    background-color: #ffb66a;
 }
 
 #main article img {
