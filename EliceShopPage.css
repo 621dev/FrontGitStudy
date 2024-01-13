@@ -19,6 +19,7 @@ ol, ul {
 
 .container{
     width: 960px;
+    margin: 0 auto;
 }
 
 /* header Css */
@@ -73,11 +74,26 @@ ol, ul {
 #intro nav ul li a {
     font-size: 20px;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
-#intro nav ul li a:hover {
-    color: #917f7f;
+@media (min-width: 320px) and (max-width: 600px){
+    .container{
+        width: 640px;
+    }
+    #intro{
+        height: 160px;
+    }
+    #intro h1 {
+        width: 100%;
+    }
+    #intro h1 a {
+        text-align: center;
+        padding: 22px 0 0 0;
+    }
+    #intro nav {
+        width:100%
+    }
+
 }
 
 /* main */
@@ -96,66 +112,34 @@ ol, ul {
 
 #main article.imageBox1 {
     background-color: #532fa1;
-    transition: background-color 0.3s;
-}
-#main article.imageBox1:hover {
-    background-color: #8683bd;
 }
 
 #main article.imageBox2 {
     background-color: #a44789;
-    transition: background-color 0.3s;
-}
-#main article.imageBox2:hover {
-    background-color: #bf7eac;
 }
 
 #main article.imageBox3 {
     background-color: #3ab6bc;
-    transition: background-color 0.3s;
-}
-#main article.imageBox3:hover {
-    background-color: #75ccd0;
 }
 
 #main article.imageBox4 {
     background-color: #daec17;
-    transition: background-color 0.3s;
-}
-#main article.imageBox4:hover {
-    background-color: #e6ff02;
 }
 
 #main article.imageBox5 {
     background-color: #f600ef;
-    transition: background-color 0.3s;
-}
-#main article.imageBox5:hover {
-    background-color: #ff9cf7;
 }
 
 #main article.imageBox6 {
     background-color: #3be000;
-    transition: background-color 0.3s;
-}
-#main article.imageBox6:hover {
-    background-color: #99ff79;
 }
 
 #main article.imageBox7 {
     background-color: #ff022a;
-    transition: background-color 0.3s;
-}
-#main article.imageBox7:hover {
-    background-color: #ff6682;
 }
 
 #main article.imageBox8 {
     background-color: #ff8000;
-    transition: background-color 0.3s;
-}
-#main article.imageBox8:hover {
-    background-color: #ffb66a;
 }
 
 #main article img {
@@ -169,6 +153,7 @@ ol, ul {
     padding: 0px 0 0px 0;
 }
 
+/* 가운데 텍스트 */
 #main article.text {
     width: 100%;
     height: 66px;
@@ -185,7 +170,7 @@ ol, ul {
 /* footer */
 
 #footer {
-    clear :both;
+    clear: both;
     width: 100%;
     height: 80px;
     background-color: #f9f9f9;
@@ -206,12 +191,38 @@ ol, ul {
     font-size: 12px;
     color : #999;
     padding: 32px 0 0 40px;
+    text-align: left;
 }
 
 #footer .address p {
     font-size: 12px;
     color : #999;
     padding: 32px 40px 0 0;
-
     text-align: right;
 }
+
+/* 애니메이션 */
+
+#intro nav ul li a {transition: color 0.3s;}
+#intro nav ul li a:hover { color: #917f7f; }
+
+#main article.imageBox1,
+#main article.imageBox2,
+#main article.imageBox3,
+#main article.imageBox4,
+#main article.imageBox5,
+#main article.imageBox6,
+#main article.imageBox7,
+#main article.imageBox8 {transition: background-color 0.3s;}
+
+#main article.imageBox1:hover {background-color: #8683bd;}
+#main article.imageBox2:hover {background-color: #bf7eac;}
+#main article.imageBox3:hover {background-color: #75ccd0;}
+#main article.imageBox4:hover {background-color: #e6ff02;}
+#main article.imageBox5:hover {background-color: #ff9cf7;}
+#main article.imageBox6:hover {background-color: #99ff79;}
+#main article.imageBox7:hover {background-color: #ff6682;}
+#main article.imageBox8:hover {background-color: #ffb66a;}
+
+#main article img { transition: all 0.3s; }
+#main article img:hover { transform: scale(1.1); }
