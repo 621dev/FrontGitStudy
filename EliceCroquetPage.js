@@ -43,3 +43,29 @@ setInterval(function() {
         currentSlide = 0;
     }
 }, 3000);
+
+/**
+ *  Tabs
+ *  중단 메인 페이지 탭 기능 구현
+ */
+
+var links = document.querySelectorAll(".tabs-list li a")
+var items = document.querySelectorAll(".tabs-list li")
+for (var i = 0; i < links.length; i++) {
+    links[i].onclick = function(e) {
+        e.preventeDefault();
+    }
+}
+
+for (var i = 0; i < items.length; i++) {
+    items[i].onclick = function() {
+        var tabId = this.querySelector("a").getAttribute('href') ;
+        console.log(this.classList);
+        document.querySelectorAll(".tabs-list li, .tabs div.tab").forEach(function(item) {
+            item.classList.remove("active");
+            console.log(item);
+        });
+        document.querySelector(tabId).classList.add("active");
+        this.classList.add("active");
+    }
+}

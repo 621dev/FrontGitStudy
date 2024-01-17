@@ -99,6 +99,10 @@ section .title p {
     color: #8c979e;
 }
 
+section .tabs p {
+    white-space: pre-line;
+}
+
 section .row {
     display: flex;
     flex-direction: row;
