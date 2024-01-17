@@ -129,4 +129,3 @@ document.querySelector(".left-arrow").onclick = function () {
     });
     preSlide.classList.add("active");
 }
-
